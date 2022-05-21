@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Ex_2_SessionServlet</servlet-name>
+        <servlet-class>Lab_Ex_7.Ex_2_SessionServlet</servlet-class>
+        <init-param>
+            <param-name>users</param-name>
+            <param-value>Subhashree,Harini,Raksha</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>111,333,555</param-value>
+        </init-param>
+        <init-param>
+            <param-name>credit_card</param-name>
+            <param-value>222,444,666</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Ex_2_SessionServlet</servlet-name>
+        <url-pattern>/Ex_2_SessionServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
